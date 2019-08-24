@@ -1,0 +1,14 @@
+body {
+  background-image: linear-gradient(to right bottom, #c80032, #b6004e, #990863, #76226f, #4e2c70, #393978, #21437c, #004b7b, #00608a, #007592, #008995, #239c94);
+
+}
+
+.container {
+  background-color: pink; 
+  float: left; 
+}
+
+.gifDiv {
+  float: left; 
+  margin: 1px; 
+}
