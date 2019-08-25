@@ -38,7 +38,7 @@ $( document ).ready(function() {
   
       displayGifButtons();
       return false;
-      })
+      });
   }
   // Function to remove last action button
       // Doesnt work properly yet removes all of the added buttons
