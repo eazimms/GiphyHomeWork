@@ -15,6 +15,7 @@ $( document ).ready(function() {
   "Yum", 
   
   ];
+  
   // Create the gif buttons. 
   function displayGifButtons(){
       $("#gifButtonsView").empty(); // erasing anything in this div id so that it doesnt duplicate the results
