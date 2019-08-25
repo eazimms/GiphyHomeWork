@@ -19,6 +19,7 @@ $( document ).ready(function() {
   function displayGifButtons(){
       $("#gifButtonsView").empty(); // erasing anything in this div id so that it doesnt duplicate the results
       for (var i = 0; i < topics.length; i++){
+        //creating a button for each item in the array. 
           var gifButton = $("<button>");
           gifButton.addClass("action");
           gifButton.addClass("btn btn-primary")
@@ -27,9 +28,10 @@ $( document ).ready(function() {
           $("#gifButtonsView").append(gifButton);
       }
   }
-  // Function to add a new action button
+  // Function to add a new topic button when we add one into the input. 
   function addNewButton(){
       $("#addGif").on("click", function(){
+        //   pulls the value from 'gif-input'. 
       var action = $("#gif-input").val().trim();
       if (action == ""){
         return false; // added so user cannot add a blank button
@@ -76,7 +78,7 @@ $( document ).ready(function() {
               gifDiv.append(gifRating);
               // pulling gif
               var gifImage = $("<img>","</br>");
-            //  yea
+            // 
               gifImage.attr("src", results[i].images.fixed_height_small_still.url); // still image stored into src of image
               gifImage.attr("data-still",results[i].images.fixed_height_small_still.url); // still image
               gifImage.attr("data-animate",results[i].images.fixed_height_small.url); // animated image
