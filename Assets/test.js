@@ -49,6 +49,8 @@ $( document ).ready(function() {
         return false; // added so user cannot add a blank button
         
       }
+
+    //   Push the new one to the array. 
       topics.push(action);
   
       displayGifButtons();
