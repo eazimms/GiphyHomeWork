@@ -3,9 +3,7 @@ body{
 }
 
 .container {
-  margin: 1rem; 
-  color: white; 
-  align-content: center; 
+  
 }
 
 .gifDiv {
@@ -26,14 +24,14 @@ body{
 }
 
 #gif-form {
-  background-color: White; 
-  border-radius: 5%; 
-  text-align: center; 
+  display: inline-block; 
+ 
 }
 
 
 .image {
   height: 10em; 
+  border: 3em;
   
 }
 
