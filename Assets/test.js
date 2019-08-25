@@ -17,7 +17,7 @@ $( document ).ready(function() {
   ]
   // Create the gif buttons. 
   function displayGifButtons(){
-      $("#gifButtonsView").clear();
+      $("#gifButtonsView").empty(); // erasing anything in this div id so that it doesnt duplicate the results
       for (var i = 0; i < actions.length; i++){
           var gifButton = $("<button>");
           gifButton.addClass("action");
@@ -64,7 +64,7 @@ $( document ).ready(function() {
           $("#gifsView").empty(); // erasing anything in this div id so that it doesnt keep any from the previous click
           var results = response.data; //shows results of gifs
           if (results == ""){
-            alert("No gif exits for that.");
+            alert("There isn't a gif for this selected button");
           }
           for (var i=0; i < results.length; i++){
   
@@ -74,7 +74,6 @@ $( document ).ready(function() {
             // Add rating of gif to teh gif div. 
               var gifRating = $("<p>").text("Rating: " + results[i].rating);
               gifDiv.append(gifRating);
-              console.log(response.rating); 
               // pulling gif
               var gifImage = $("<img>");
               gifImage.attr("src", results[i].images.fixed_height_small_still.url); // still image stored into src of image
