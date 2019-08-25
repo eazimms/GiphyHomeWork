@@ -71,6 +71,7 @@ $( document ).ready(function() {
               var gifDiv = $("<div>"); //div for the gifs to go inside
               gifDiv.addClass("gifDiv");
               // pulling rating of gif
+            // Add rating of gif to teh gif div. 
               var gifRating = $("<p>").text("Rating: " + results[i].rating);
               gifDiv.append(gifRating);
               // pulling gif
