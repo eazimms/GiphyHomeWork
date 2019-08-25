@@ -93,7 +93,7 @@ $( document ).ready(function() {
   displayGifButtons(); // displays list of actions already created
   addNewButton();
   removeLastButton();
-  // Document Event Listeners
+  // Document Event Listeners. checking the state of the gif itself, if still it will animate, if not it will "pause the gif". 
   $(document).on("click", ".action", displayGifs);
   $(document).on("click", ".image", function(){
       var state = $(this).attr('data-state');
