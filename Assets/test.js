@@ -1,6 +1,6 @@
 
 $( document ).ready(function() {
-  // An array of actions, new actions will be pushed into this array;
+  // An array of topics, new toics will be pushed into this array;
   var topics = [
   "Dogs", 
   "Kittens", 
@@ -75,7 +75,8 @@ $( document ).ready(function() {
               var gifRating = $("<p>").text("Rating: " + results[i].rating);
               gifDiv.append(gifRating);
               // pulling gif
-              var gifImage = $("<img></br>");
+              var gifImage = $("<img>","</br>");
+            //  yea
               gifImage.attr("src", results[i].images.fixed_height_small_still.url); // still image stored into src of image
               gifImage.attr("data-still",results[i].images.fixed_height_small_still.url); // still image
               gifImage.attr("data-animate",results[i].images.fixed_height_small.url); // animated image
