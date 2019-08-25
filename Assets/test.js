@@ -1,7 +1,7 @@
 
 $( document ).ready(function() {
   // An array of actions, new actions will be pushed into this array;
-  var actions = [
+  var topics = [
   "Dogs", 
   "Kittens", 
   "Yes", 
@@ -18,12 +18,12 @@ $( document ).ready(function() {
   // Create the gif buttons. 
   function displayGifButtons(){
       $("#gifButtonsView").empty(); // erasing anything in this div id so that it doesnt duplicate the results
-      for (var i = 0; i < actions.length; i++){
+      for (var i = 0; i < topics.length; i++){
           var gifButton = $("<button>");
           gifButton.addClass("action");
           gifButton.addClass("btn btn-primary")
-          gifButton.attr("data-name", actions[i]);
-          gifButton.text(actions[i]);
+          gifButton.attr("data-name", topics[i]);
+          gifButton.text(topics[i]);
           $("#gifButtonsView").append(gifButton);
       }
   }
@@ -34,7 +34,7 @@ $( document ).ready(function() {
       if (action == ""){
         return false; // added so user cannot add a blank button
       }
-      actions.push(action);
+      topics.push(action);
   
       displayGifButtons();
       return false;
@@ -45,7 +45,7 @@ $( document ).ready(function() {
       // rather than just the last, need to work on that...
   function removeLastButton(){
       $("removeGif").on("click", function(){
-      actions.pop(action);
+      topics.pop(action);
       displayGifButtons();
       return false;
       });
@@ -75,7 +75,7 @@ $( document ).ready(function() {
               var gifRating = $("<p>").text("Rating: " + results[i].rating);
               gifDiv.append(gifRating);
               // pulling gif
-              var gifImage = $("<img>");
+              var gifImage = $("<img></br>");
               gifImage.attr("src", results[i].images.fixed_height_small_still.url); // still image stored into src of image
               gifImage.attr("data-still",results[i].images.fixed_height_small_still.url); // still image
               gifImage.attr("data-animate",results[i].images.fixed_height_small.url); // animated image
