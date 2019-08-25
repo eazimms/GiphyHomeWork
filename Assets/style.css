@@ -14,13 +14,14 @@ body{
 }
 
 .gifsView{
+  color: red; 
 
 }
 
 .jumbotron{
   text-align: center; 
   color: black;
-  background-color: white;  
+  background-color: blue; 
 
 }
 
@@ -29,15 +30,18 @@ body{
   border-radius: 5%; 
   text-align: center; 
 }
-<<<<<<< HEAD:Assets/style.css
-<<<<<<< HEAD:Assets/style.css
+
 
 img {
   height: 150px; 
   border: 10rem; 
   
 }
-=======
->>>>>>> parent of 32b3652... Fixed everyting:style.css
-=======
->>>>>>> parent of 32b3652... Fixed everyting:style.css
+
+p {
+  color: black; 
+}
+
+input {
+  color: black; 
+}
