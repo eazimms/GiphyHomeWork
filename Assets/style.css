@@ -1,7 +1,7 @@
 body{
  
 }
-}
+
 .container {
   margin: 1rem; 
   color: white; 
@@ -30,6 +30,6 @@ body{
 
 img {
   height: 150px; 
-  border: 10px; 
-
+  border: 10rem; 
+  
 }

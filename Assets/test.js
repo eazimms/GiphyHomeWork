@@ -10,8 +10,8 @@ $( document ).ready(function() {
   "Dark Souls", 
   "Gundam", 
   "Nope", 
-  "Crying", 
-  "Winking",
+  "Cry", 
+  "Wink",
   "Yum", 
   
   ]
@@ -78,7 +78,7 @@ $( document ).ready(function() {
               gifImage.attr("src", results[i].images.fixed_height_small_still.url); // still image stored into src of image
               gifImage.attr("data-still",results[i].images.fixed_height_small_still.url); // still image
               gifImage.attr("data-animate",results[i].images.fixed_height_small.url); // animated image
-              gifImage.attr("data-state", "still"); // set the image state
+              gifImage.attr("data-state", "still"); // set the image state, default still. 
               gifImage.addClass("image");
               gifDiv.append(gifImage);
               // pulling still image of gif
