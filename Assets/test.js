@@ -66,7 +66,7 @@ $( document ).ready(function() {
           if (results == ""){
             alert("There isn't a gif for this selected button");
           }
-          for (var i=0; i<results.length; i++){
+          for (var i=0; i < results.length; i++){
   
               var gifDiv = $("<div>"); //div for the gifs to go inside
               gifDiv.addClass("gifDiv");
