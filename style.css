@@ -13,14 +13,12 @@ body{
   margin: 1px; 
 }
 
-.gifsView{
 
-}
 
 .jumbotron{
   text-align: center; 
   color: black;
-  background-color: white;  
+  background-color: blue;  
 
 }
 
@@ -28,4 +26,10 @@ body{
   background-color: White; 
   border-radius: 5%; 
   text-align: center; 
+}
+
+img {
+  height: 150px; 
+  border: 10px; 
+
 }
